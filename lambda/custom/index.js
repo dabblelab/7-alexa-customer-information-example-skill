@@ -112,7 +112,8 @@ const MobileIntentHandler = {
                       .withSimpleCard(APP_NAME, errorResponse)
                       .getResponse();
       }
-      const speechResponse = `Hello your mobile number is, ${profileMobile}`;
+      const speechResponse = `Hello your mobile number is, <say-as interpret-as="telephone">${profileMobile}</say-as>`;
+      const cardResponse = `Hello your mobile number is, ${profileMobile}`
       return responseBuilder
                       .speak(speechResponse)
                       .withSimpleCard(APP_NAME, speechResponse)
