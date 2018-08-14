@@ -1,0 +1,52 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "greeter",
+      "types": [
+
+      ],
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+
+          ]
+        },
+        {
+          "name": "GreetMeIntent",
+          "samples":[
+            "greet me",
+            "hello"
+          ]
+        },
+        {
+          "name": "EmailIntent",
+          "samples": [
+            "email",
+            "what is my email"
+          ]
+        },
+        {
+          "name": "MobileIntent",
+          "samples": [
+            "mobile",
+            "mobile number",
+            "what is my mobile number"
+          ]
+        }
+      ]
+    }
+  }
+}
