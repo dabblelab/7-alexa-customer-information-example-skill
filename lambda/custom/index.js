@@ -104,19 +104,19 @@ const MobileIntentHandler = {
     try {
       const upsServiceClient = serviceClientFactory.getUpsServiceClient();
       const profileMobileObject = await upsServiceClient.getProfileMobileNumber();
-      const profileMobile = profileMobileObject.phoneNumber;
-      if (!profileMobile) {
+      if (!profileMobileObject) {
         const errorResponse = `It looks like you don\'t have a mobile number set. You can set your mobile number from the companion app.`
         return responseBuilder
                       .speak(errorResponse)
                       .withSimpleCard(APP_NAME, errorResponse)
                       .getResponse();
       }
+      const profileMobile = profileMobileObject.phoneNumber;
       const speechResponse = `Hello your mobile number is, <say-as interpret-as="telephone">${profileMobile}</say-as>`;
       const cardResponse = `Hello your mobile number is, ${profileMobile}`
       return responseBuilder
                       .speak(speechResponse)
-                      .withSimpleCard(APP_NAME, speechResponse)
+                      .withSimpleCard(APP_NAME, cardResponse)
                       .getResponse();
     } catch (error) {
       console.log(JSON.stringify(error));
