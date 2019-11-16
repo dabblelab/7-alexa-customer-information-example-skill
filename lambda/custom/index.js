@@ -6,7 +6,7 @@ const messages = {
   NOTIFY_MISSING_PERMISSIONS: 'Please enable profile permissions in the Amazon Alexa app.',
   ERROR: 'Uh Oh. Looks like something went wrong.'
 };
-const APP_NAME = "Greeter"
+
 const FULL_NAME_PERMISSION = "alexa::profile:name:read";
 const EMAIL_PERMISSION = "alexa::profile:email:read";
 const MOBILE_PERMISSION = "alexa::profile:mobile_number:read";
@@ -16,8 +16,8 @@ const LaunchRequestHandler = {
     return handlerInput.requestEnvelope.request.type === 'LaunchRequest';
   },
   handle(handlerInput) {
-    const speechText = 'Hello there. Welcome to Alexa. you can say greet me!';
-    const reprompt = 'Say greet me';
+    const speechText = `Hello. You can say: what's my name, what's my email, or, what's my phone number.`;
+    const reprompt = `say: what's my name, what's my email, or, what's my phone number.`;
 
     return handlerInput.responseBuilder
       .speak(speechText)
@@ -160,7 +160,6 @@ const CancelAndStopIntentHandler = {
 
     return handlerInput.responseBuilder
       .speak(speechText)
-      .withSimpleCard('Hello World', speechText)
       .getResponse();
   },
 };

@@ -30,23 +30,27 @@
         {
           "name": "GreetMeIntent",
           "samples":[
-            "greet me",
-            "hello"
+            "name",
+            "what's my name",
+            "what is my name"
           ]
         },
         {
           "name": "EmailIntent",
           "samples": [
             "email",
-            "what is my email"
+            "what is my email",
+            "what's my email address"
           ]
         },
         {
           "name": "MobileIntent",
           "samples": [
             "mobile",
+            "phone",
             "mobile number",
-            "what is my mobile number"
+            "what is my mobile number",
+            "what is my phone number"
           ]
         }
       ]
