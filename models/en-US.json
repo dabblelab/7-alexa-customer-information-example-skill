@@ -1,11 +1,14 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "greeter",
+      "invocationName": "template seven",
       "types": [
 
       ],
       "intents": [
+        {
+          "name": "AMAZON.NavigateHomeIntent"
+        },
         {
           "name": "AMAZON.CancelIntent",
           "samples": [
