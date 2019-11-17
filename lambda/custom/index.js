@@ -2,6 +2,7 @@
 /* eslint-disable  no-console */
 
 const Alexa = require('ask-sdk-core');
+const APP_NAME = "Template Seven";
 const messages = {
   NOTIFY_MISSING_PERMISSIONS: 'Please enable profile permissions in the Amazon Alexa app.',
   ERROR: 'Uh Oh. Looks like something went wrong.'
