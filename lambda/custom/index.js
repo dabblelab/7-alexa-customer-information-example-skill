@@ -38,7 +38,7 @@ const GreetMeIntentHandler = {
     try {
       const upsServiceClient = serviceClientFactory.getUpsServiceClient();
       const profileName = await upsServiceClient.getProfileName();
-      const speechResponse = `Hello, ${profileName}`;
+      const speechResponse = `Your name is ${profileName}`;
       return responseBuilder
                       .speak(speechResponse)
                       .withSimpleCard(APP_NAME, speechResponse)
