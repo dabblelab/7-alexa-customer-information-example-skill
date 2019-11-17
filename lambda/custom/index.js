@@ -38,7 +38,7 @@ const GreetMeIntentHandler = {
     try {
       const upsServiceClient = serviceClientFactory.getUpsServiceClient();
       const profileName = await upsServiceClient.getProfileName();
-      const speechResponse = `Your name is ${profileName}`;
+      const speechResponse = `Your name is, ${profileName}`;
       return responseBuilder
                       .speak(speechResponse)
                       .withSimpleCard(APP_NAME, speechResponse)
@@ -75,7 +75,7 @@ const EmailIntentHandler = {
                       .withSimpleCard(APP_NAME, noEmailResponse)
                       .getResponse();
       }
-      const speechResponse = `Hello your email is, ${profileEmail}`;
+      const speechResponse = `Your email is, ${profileEmail}`;
       return responseBuilder
                       .speak(speechResponse)
                       .withSimpleCard(APP_NAME, speechResponse)
@@ -113,8 +113,8 @@ const MobileIntentHandler = {
                       .getResponse();
       }
       const profileMobile = profileMobileObject.phoneNumber;
-      const speechResponse = `Hello your mobile number is, <say-as interpret-as="telephone">${profileMobile}</say-as>`;
-      const cardResponse = `Hello your mobile number is, ${profileMobile}`
+      const speechResponse = `Your mobile number is, <say-as interpret-as="telephone">${profileMobile}</say-as>`;
+      const cardResponse = `Your mobile number is, ${profileMobile}`
       return responseBuilder
                       .speak(speechResponse)
                       .withSimpleCard(APP_NAME, cardResponse)
