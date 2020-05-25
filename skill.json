@@ -5,11 +5,11 @@
         "en-US": {
           "summary": "Sample Short Description",
           "examplePhrases": [
-            "Alexa open greeter",
-            "Alexa tell greeter hello",
-            "Alexa ask greeter to greet me"
+            "Alexa open template seven",
+            "Alexa start template seven",
+            "Alexa launch template seven"
           ],
-          "name": "greeter",
+          "name": "Template 7 - Customer Information Example",
           "description": "A starter template for Alexa skill that uses the Customer Profile API",
           "smallIconUri": "https://s3.amazonaws.com/cdn.dabblelab.com/img/skill-template-default-sm.png",
           "largeIconUri": "https://s3.amazonaws.com/cdn.dabblelab.com/img/skill-template-default-lg.png"
@@ -32,8 +32,8 @@
       "allowsPurchases": false,
       "locales": {
         "en-US": {
-          "termsOfUseUrl": "http://example.com/terms",
-          "privacyPolicyUrl": "http://example.com/privacy"
+          "termsOfUseUrl": "http://dabblelab.com/terms",
+          "privacyPolicyUrl": "http://dabblelab.com/privacy"
         }
       },
       "isExportCompliant": true,
